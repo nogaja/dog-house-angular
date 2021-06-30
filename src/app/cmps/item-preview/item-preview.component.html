@@ -1,0 +1,11 @@
+<section class="item-preview" >
+    <h2>{{item?.txt}}</h2>
+    <p class="details">Click dog for details</p>
+    <img src="../../../assets/img/dogs/Dog_{{item.id}}.png/" [routerLink]="['/item',item.id]"> 
+    <!-- <p>Id: {{item?.id}}</p>
+    <hr /> -->
+    <!-- Cannot put class on ng-content ): -->
+    <div class="text-center">
+        <ng-content></ng-content>
+    </div>
+</section>

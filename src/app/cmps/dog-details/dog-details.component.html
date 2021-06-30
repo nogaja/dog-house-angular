@@ -1,0 +1,14 @@
+<!-- <div *ngIf="item" class="dog-details">
+</div> -->
+<div class="dog-details">
+    <h2>{{item?.txt}}</h2>
+    <img src="../../../assets/img/dogs/Dog_{{item.id}}.png/" alt="dog-pic">
+</div>
+<div class="dog-desc">
+    <p>{{item?.desc}}</p>
+
+</div>
+<!-- <div class="actions">
+    <a [routerLink]="['/item,item.id,'edit'']">Edit dog details</a>
+</div> -->
+<button (click)="onBack()">Back</button>
